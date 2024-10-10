@@ -1,0 +1,117 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0; /* Remove default padding */
+    font-family: 'Barkentina', sans-serif;
+    background-color: rgba(98,163,160,255);
+    color: #333;
+}
+
+header {
+    position: relative;
+    height: 50vh; /* Set header height to 50% of viewport height */
+    margin: 0;
+}
+
+.banner {
+    width: 100%;
+    height: 100%; /* Make the banner occupy the entire body */
+}
+
+nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 360px; /* Adjust width as needed */
+    height: 100vh; /* Adjust height to fill the viewport height */
+    background-color: rgba(98,163,160,255);
+    font-family: 'Barkentina', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border-left: 1px solid #ccc;
+    background-image: url('https://i.ibb.co/p44Xp2K/logo.png'); /* Add background image */
+    background-size:contain; /* Adjust background size */
+    background-position:bottom; /* Adjust background position */
+    background-repeat: no-repeat;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 20px;
+    padding-inline: 30px;
+}
+
+nav ul li {
+    margin-bottom: 10px;
+}
+
+nav ul li a {
+    color: #333;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Brakentina', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    padding: 20px 20px;
+    background-color: #a7d1c9;
+    border: 1px solid #57a797;
+    border-radius: 5px;
+    display: block;
+    transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+    margin-top: 40px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2); /* Add shadow */
+}
+
+
+nav ul li a:hover {
+    background-color: #5a9c7f;
+    border-color: #3c6d5d;
+    color: #fff;
+}
+
+.additional-text {
+    position: absolute;
+    top: 540px;
+    left: 0;
+    width: 72.5%;
+    padding: 20px;
+    background-color: #77c8a4;
+    color: #000000;
+    text-align: center;
+    z-index: 1;
+    font-family:'Barkentina', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bolder;
+    font-size: 18px;
+}
+
+/* Media Query for Mobile Devices */
+@media screen and (max-width: 768px) {
+    .banner {
+        height: auto;
+        width: 100%;
+    }
+
+    header {
+        height: auto;
+    }
+
+    nav {
+        position: static;
+        width: 100%;
+        border-left: none;
+        border-top: 1px solid #ccc;
+    }
+
+    nav ul {
+        padding: 10px;
+    }
+
+    nav ul li {
+        margin-bottom: 15px;
+    }
+}

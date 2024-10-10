@@ -1,0 +1,81 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0; /* Remove default padding */
+    font-family: 'Barkentina', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: rgb(255, 255, 255);
+    color: #333;
+}
+
+header {
+    position: relative;
+    height: 50vh; /* Set header height to 50% of viewport height */
+    margin: 0;
+}
+
+nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 375px; /* Adjust width as needed */
+    height: 100vh; /* Adjust height to fill the viewport height */
+    font-family: 'Barkentina', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border-left: 1px solid #ccc;
+    background-image: url('https://i.ibb.co/p44Xp2K/logo.png'); /* Add background image */
+    background-size:contain; /* Adjust background size */
+    background-position:bottom; /* Adjust background position */
+    background-repeat: no-repeat;
+    background-color: rgba(98,163,160,255);
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 20px;
+    padding-inline: 30px;
+}
+
+nav ul li {
+    margin-bottom: 10px;
+}
+
+nav ul li a {
+    color: #333;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Brakentina', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    padding: 20px 20px;
+    background-color: #a7d1c9;
+    border: 1px solid #57a797;
+    border-radius: 5px;
+    display: block;
+    transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+    margin-top: 40px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2); /* Add shadow */
+}
+
+
+nav ul li a:hover {
+    background-color: #5a9c7f;
+    border-color: #3c6d5d;
+    color: #fff;
+}
+
+/* Adjust text inside body */
+.about-section {
+    position: absolute;
+    top: 0;
+    left: 20px; /* Align with the right edge of the nav */
+    width: 340px; /* Take up the remaining width */
+    padding: 40px;
+    font-size: 16px;
+    line-height: 1.6;
+}
